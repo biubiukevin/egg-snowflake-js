@@ -17,7 +17,7 @@ describe('test/egg-twitter-snowflake.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, eggTwitterSnowflake')
+      .expect('hi, snowflake')
       .expect(200);
   });
 });

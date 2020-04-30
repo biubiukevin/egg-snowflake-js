@@ -61,6 +61,16 @@ exports.snowflake = {
 
 ## 详细配置
 
+```js
+// {app_root}/config/config.default.js
+exports.snowflake = {
+  client: {
+    workerId: 1,    //1到31的整数，如果为null，则默认使用一个1到31的随机整数
+    machineId: 1    //1到31的整数，如果为null，则默认使用hostname生成一个1到31的整数
+  }
+};
+```
+
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
 ## 单元测试

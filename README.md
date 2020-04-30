@@ -9,7 +9,7 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-snowflake-js.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-snowflake-js
-[travis-image]: https://img.shields.io/travis/eggjs/egg-snowflake-js.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/eggjs/egg-snowflake-j's.svg?style=flat-square
 [travis-url]: https://travis-ci.org/eggjs/egg-snowflake-js
 [codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-snowflake-js.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/eggjs/egg-snowflake-js?branch=master
@@ -20,6 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-snowflake-js.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-snowflake-js
 
+
 <!--
 Description here.
 -->
@@ -29,6 +30,12 @@ Description here.
 ```bash
 $ npm i egg-snowflake-js --save
 ```
+## Dependencies
+
+
+egg-snowflake-js version | egg 1.x
+--- | ---
+1.x | 😁
 
 ## Usage
 
@@ -44,8 +51,11 @@ exports.snowflake = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.eggTwitterSnowflake = {
-  
+exports.snowflake = {
+  client: {
+    workerId: 1,    //1 to 31 int number. If do not set workerId, it will set a random number from 1 to 31
+    machineId: 1    //1 to 31 int number. If do not set machineId, it will set a int number(1 to 31) from hostname lenth
+  }
 };
 ```
 
