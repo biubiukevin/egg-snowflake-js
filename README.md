@@ -30,8 +30,7 @@ Description here.
 ```bash
 $ npm i egg-snowflake-js --save
 ```
-## Dependencies
-
+## Dependencies egg version
 
 egg-snowflake-js version | egg 1.x
 --- | ---
@@ -64,7 +63,14 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
-
+```js
+//{app_root}/app/controller/index.js
+async index() {
+  const app = this.app;
+  const flakeId = app.snowflake.next();
+  console.log(flakeId)
+}
+```
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/biubiukevin/egg-snowflake-js/issues).
