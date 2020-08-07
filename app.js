@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = app => {
-    require('./lib/snowflake')(app);
-}
+  require('./lib/snowflake')(app);
+};

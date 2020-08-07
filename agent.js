@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = agent => {
-    require('./lib/snowflake')(agent);
-}
+  require('./lib/snowflake')(agent);
+};
